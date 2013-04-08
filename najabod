@@ -582,12 +582,15 @@ sub SendServiceDetails($@) {
     my $details = '';
 
     foreach my $key (sort keys %{$oservice}) {
+      if (not ($key=~/^__/)) {
 	$details .= "\n\t$key: $oservice->{$key}";
+      }
     }
 
     $conn->Send($message->Reply(
-	body => "Service details:$details\n",
+        body => "Service details:\n $hs: $details\n",
     ));
+
 }
 
 sub RunNagiosCmd(@) {
