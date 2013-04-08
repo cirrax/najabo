@@ -562,7 +562,8 @@ sub SendListServices($@) {
 	$l .= "\n$h |" . $obj->status . "|:\n";
 
 	foreach my $s (sort $log->list_services_on_host($h)) {
-	    $l .= "\t$s\n";
+            my $obj=$log->service($h, $s);
+	    $l .= "\t |" . $obj->status . "| $s\n";
 	}
     }
 
@@ -588,9 +589,8 @@ sub SendServiceDetails($@) {
     }
 
     $conn->Send($message->Reply(
-        body => "Service details:\n $hs: $details\n",
+	body => "Service details:\n $hs: $details\n",
     ));
-
 }
 
 sub RunNagiosCmd(@) {
