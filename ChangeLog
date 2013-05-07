@@ -1,4 +1,4 @@
-najabo (0.4.trb1) unstable; urgency=medium
+najabo (0.4.trb1~bpo60+1~cirrax1) unstable; urgency=medium
 
   * Fork trb Version
   * new command lp (list Problem)
