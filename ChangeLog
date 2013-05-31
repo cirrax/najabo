@@ -1,8 +1,16 @@
+najabo (0.4.trb2~bpo60+1~cirrax1) unstable; urgency=medium
+
+  * Send Alerts generated before start of najabo [commit: 2c3bbe7]
+  * Bugfix: ack for host problem resulted in core dump [commit: 82f68d1]
+  * Bugfix: Spool directory creation [commit: 68ea144]
+
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Fri, 31 May 2013 19:31:27 +0100
+
 najabo (0.4.trb1~bpo60+1~cirrax2) unstable; urgency=medium
 
   * Create spool directory
 
- -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Sat, 11 Mai 2013 14:31:27 +0100
+ -- Benedikt Trefzer <benedikt.trefzer@cirrax.com>  Sat, 12 May 2013 14:31:27 +0100
 
 najabo (0.4.trb1~bpo60+1~cirrax1) unstable; urgency=medium
 
