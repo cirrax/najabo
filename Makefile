@@ -17,5 +17,5 @@ install:
 	cp najabod "$(DESTDIR)/usr/sbin/"
 	
 	mkdir -p "$(DESTDIR)$(SPOOLDIR)/najabo"
-	chmod +s "$(DESTDIR)$(SPOOLDIR)/najabo"
+	chmod 0770 "$(DESTDIR)$(SPOOLDIR)/najabo"
 
